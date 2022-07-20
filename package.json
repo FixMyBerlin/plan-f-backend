@@ -2,7 +2,7 @@
   "name": "plan-f-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Providing content for the Plan F handbook.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,13 +11,13 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.2.3",
-    "@strapi/plugin-users-permissions": "4.2.3",
     "@strapi/plugin-i18n": "4.2.3",
+    "@strapi/plugin-users-permissions": "4.2.3",
+    "@strapi/strapi": "4.2.3",
     "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "FixMyCity"
   },
   "strapi": {
     "uuid": "b200dabc-a24d-4110-b9ba-340de6f45173"
