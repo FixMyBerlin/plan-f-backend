@@ -9,6 +9,9 @@ jobs:
   build_and_deploy_to_lightsail_container_service:
     runs-on: ubuntu-latest
 
+    env:
+      SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
+
     steps:
     - uses: actions/checkout@v3
 
