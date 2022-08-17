@@ -34,12 +34,12 @@ jobs:
       run: >
         docker build .
         --file ./Dockerfile
-        --tag public.ecr.aws/n0p8j4k5/planf/cms:${GITHUB_SHA}
+        --tag public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
 
     - name: Push the app image
       run: |
         aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/n0p8j4k5/
-        docker push public.ecr.aws/n0p8j4k5/planf/cms:${GITHUB_SHA}
+        docker push public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
 
     - name: Create container_with_image.yml
       run: |
