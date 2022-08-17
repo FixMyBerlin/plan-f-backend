@@ -7,6 +7,8 @@ containers:
       AWS_S3_REGION_NAME: "${LIGHTSAIL_STORAGE_REGION_NAME}"
       AWS_SECRET_ACCESS_KEY: "${LIGHTSAIL_STORAGE_SECRET_ACCESS_KEY}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
+    ports:
+      "80": HTTP
 publicEndpoint:
   containerName: strapi
   containerPort: 80
