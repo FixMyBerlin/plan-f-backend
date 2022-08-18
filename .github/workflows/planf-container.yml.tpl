@@ -15,7 +15,7 @@ containers:
       JWT_SECRET: "${JWT_SECRET}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
-      "1337": HTTP
+      "1337": HTTPS
 publicEndpoint:
   containerName: strapi
   containerPort: 1337
