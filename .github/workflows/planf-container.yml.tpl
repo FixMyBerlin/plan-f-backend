@@ -6,6 +6,8 @@ containers:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_S3_REGION_NAME: "${AWS_S3_REGION_NAME}"
       APP_KEYS: "${APP_KEYS}"
+      ADMIN_JWT_SECRET: "${ADMIN_JWT_SECRET}"
+      API_TOKEN_SALT: "${API_TOKEN_SALT}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
       "80": HTTP
