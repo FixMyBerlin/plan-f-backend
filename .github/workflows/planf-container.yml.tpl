@@ -12,6 +12,7 @@ containers:
       DATABASE_NAME: "${DATABASE_NAME}"
       DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
       DATABASE_USER: "${DATABASE_USER}"
+      JWT_SECRET: "${JWT_SECRET}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
       "80": HTTP
