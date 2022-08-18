@@ -8,6 +8,10 @@ containers:
       APP_KEYS: "${APP_KEYS}"
       ADMIN_JWT_SECRET: "${ADMIN_JWT_SECRET}"
       API_TOKEN_SALT: "${API_TOKEN_SALT}"
+      DATABASE_HOST: "${DATABASE_HOST}"
+      DATABASE_NAME: "${DATABASE_NAME}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
+      DATABASE_USER: "${DATABASE_USER}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
       "80": HTTP
