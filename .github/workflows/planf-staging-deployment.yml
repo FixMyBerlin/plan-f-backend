@@ -12,6 +12,7 @@ jobs:
 
     env:
       SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
+      APP_KEYS: ${{ secrets.APP_KEYS }}
 
     steps:
     - uses: actions/checkout@v3
@@ -40,7 +41,7 @@ jobs:
         --file ./Dockerfile
         --tag public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
 
-    - name: Push the app image
+    - name: Push the strapi image
       run: |
         aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/n0p8j4k5/
         docker push public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}

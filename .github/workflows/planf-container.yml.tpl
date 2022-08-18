@@ -3,9 +3,9 @@ containers:
   strapi:
     command: []
     environment:
-      AWS_ACCESS_KEY_ID: "${LIGHTSAIL_STORAGE_ACCESS_KEY_ID}"
-      AWS_S3_REGION_NAME: "${LIGHTSAIL_STORAGE_REGION_NAME}"
-      AWS_SECRET_ACCESS_KEY: "${LIGHTSAIL_STORAGE_SECRET_ACCESS_KEY}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_S3_REGION_NAME: "${AWS_S3_REGION_NAME}"
+      APP_KEYS: "${APP_KEYS}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
       "80": HTTP
