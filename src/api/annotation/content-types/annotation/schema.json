@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annotations",
+  "info": {
+    "singularName": "annotation",
+    "pluralName": "annotations",
+    "displayName": "Annotation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
