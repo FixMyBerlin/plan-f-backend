@@ -13,12 +13,13 @@ containers:
       DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
       DATABASE_USER: "${DATABASE_USER}"
       JWT_SECRET: "${JWT_SECRET}"
+      PORT: "80"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
-      "1337": HTTPS
+      "80": HTTP
 publicEndpoint:
   containerName: strapi
-  containerPort: 1337
+  containerPort: 80
   healthCheck:
     healthyThreshold: 2
     intervalSeconds: 20
