@@ -21,9 +21,9 @@ publicEndpoint:
   containerName: strapi
   containerPort: 80
   healthCheck:
+    path: /_health
+    timeoutSeconds: 8
     healthyThreshold: 2
+    unhealthyThreshold: 3
     intervalSeconds: 20
-    path: /
-    successCodes: 200-499
-    timeoutSeconds: 4
-    unhealthyThreshold: 2
+    successCodes: 200-299
