@@ -1,5 +1,5 @@
 {
-  "/text-blocks": {
+  "/topics": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TextBlockListResponse"
+                "$ref": "#/components/schemas/TopicListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Text-block"
+        "Topic"
       ],
       "parameters": [
         {
@@ -146,9 +146,20 @@
           "schema": {
             "type": "string"
           }
+        },
+        {
+          "name": "filters",
+          "in": "query",
+          "description": "Filters to apply",
+          "deprecated": false,
+          "required": false,
+          "schema": {
+            "type": "object"
+          },
+          "style": "deepObject"
         }
       ],
-      "operationId": "get/text-blocks"
+      "operationId": "get/topics"
     },
     "post": {
       "responses": {
@@ -157,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TextBlockResponse"
+                "$ref": "#/components/schemas/TopicResponse"
               }
             }
           }
@@ -214,23 +225,23 @@
         }
       },
       "tags": [
-        "Text-block"
+        "Topic"
       ],
       "parameters": [],
-      "operationId": "post/text-blocks",
+      "operationId": "post/topics",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/TextBlockRequest"
+              "$ref": "#/components/schemas/TopicRequest"
             }
           }
         }
       }
     }
   },
-  "/text-blocks/{id}": {
+  "/topics/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TextBlockResponse"
+                "$ref": "#/components/schemas/TopicResponse"
               }
             }
           }
@@ -295,7 +306,7 @@
         }
       },
       "tags": [
-        "Text-block"
+        "Topic"
       ],
       "parameters": [
         {
@@ -305,11 +316,11 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "string"
+            "type": "number"
           }
         }
       ],
-      "operationId": "get/text-blocks/{id}"
+      "operationId": "get/topics/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TextBlockResponse"
+                "$ref": "#/components/schemas/TopicResponse"
               }
             }
           }
@@ -375,7 +386,7 @@
         }
       },
       "tags": [
-        "Text-block"
+        "Topic"
       ],
       "parameters": [
         {
@@ -385,17 +396,17 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "string"
+            "type": "number"
           }
         }
       ],
-      "operationId": "put/text-blocks/{id}",
+      "operationId": "put/topics/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/TextBlockRequest"
+              "$ref": "#/components/schemas/TopicRequest"
             }
           }
         }
@@ -466,7 +477,7 @@
         }
       },
       "tags": [
-        "Text-block"
+        "Topic"
       ],
       "parameters": [
         {
@@ -476,11 +487,11 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "string"
+            "type": "number"
           }
         }
       ],
-      "operationId": "delete/text-blocks/{id}"
+      "operationId": "delete/topics/{id}"
     }
   }
 }

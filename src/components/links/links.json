@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_links_links",
+  "info": {
+    "displayName": "links",
+    "icon": "chalkboard-teacher"
+  },
+  "options": {},
+  "attributes": {
+    "display": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

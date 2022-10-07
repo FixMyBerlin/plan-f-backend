@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * text-block service.
+ * measure service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::text-block.text-block');
+module.exports = createCoreService('api::measure.measure');

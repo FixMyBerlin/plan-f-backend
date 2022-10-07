@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "examples",
+  "info": {
+    "singularName": "example",
+    "pluralName": "examples",
+    "displayName": "example",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": false
+    },
+    "measure": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::measure.measure",
+      "inversedBy": "examples"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "localChallanges": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "targetGroup": {
+      "type": "string"
+    },
+    "funding": {
+      "type": "string"
+    },
+    "stakeholders": {
+      "type": "richtext"
+    },
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
+    },
+    "award": {
+      "type": "richtext"
+    },
+    "relatedOffice": {
+      "type": "richtext"
+    },
+    "countryState": {
+      "type": "string"
+    },
+    "population": {
+      "type": "string"
+    },
+    "commune": {
+      "type": "string"
+    },
+    "spatialStructure": {
+      "type": "string"
+    },
+    "evaluation": {
+      "displayName": "evaluationGroup",
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation-group"
+    }
+  }
+}
