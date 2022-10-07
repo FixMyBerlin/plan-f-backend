@@ -8,8 +8,6 @@ Start your Strapi application with autoReload enabled. [Learn more](https://docs
 
 ```
 npm run develop
-# or
-yarn develop
 ```
 
 ### `start`
@@ -18,8 +16,6 @@ Start your Strapi application with autoReload disabled. [Learn more](https://doc
 
 ```
 npm run start
-# or
-yarn start
 ```
 
 ### `build`
@@ -28,8 +24,6 @@ Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/lates
 
 ```
 npm run build
-# or
-yarn build
 ```
 
 ## ⚙️📦 Docker Deployment
@@ -41,8 +35,9 @@ docker build -t planf:latest .
 ```
 
 Then run:
+
 ```sh
-docker run -d --name planf -p 7000:1337 planf 
+docker run -d --name planf -p 7000:1337 planf
 ```
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
@@ -54,4 +49,3 @@ Strapi gives you many possible deployment options for your project. Find the one
 - [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
 - [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
 - [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-

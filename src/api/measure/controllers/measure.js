@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  text-block controller
+ * measure controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::text-block.text-block');
+module.exports = createCoreController('api::measure.measure');

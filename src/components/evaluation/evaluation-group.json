@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_evaluation_evaluation_groups",
+  "info": {
+    "displayName": "evaluationGroup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "evaluability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "effectiveness": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "effort": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "portability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "synergies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "execution": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "participation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    },
+    "accessibility": {
+      "type": "component",
+      "repeatable": false,
+      "component": "evaluation.evaluation"
+    }
+  }
+}

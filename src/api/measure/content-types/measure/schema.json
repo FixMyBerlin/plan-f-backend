@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "measures",
+  "info": {
+    "singularName": "measure",
+    "pluralName": "measures",
+    "displayName": "measure",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "measures"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "examples": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::example.example",
+      "mappedBy": "measure"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
