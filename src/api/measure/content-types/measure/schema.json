@@ -29,7 +29,7 @@
     "slug": {
       "type": "uid",
       "targetField": "name",
-      "required": true
+      "required": false
     },
     "examples": {
       "type": "relation",
@@ -38,11 +38,12 @@
       "mappedBy": "measure"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
