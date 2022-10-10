@@ -30,7 +30,7 @@
       "description": "Development server"
     },
     {
-      "url": "https://plan-f-staging.tiummk647p9vk.eu-central-1.cs.amazonlightsail.com:80",
+      "url": "https://plan-f-staging.tiummk647p9vk.eu-central-1.cs.amazonlightsail.com:80/api",
       "description": "Staging server"
     },
     {
