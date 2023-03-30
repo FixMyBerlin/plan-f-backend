@@ -1,6 +1,6 @@
 # 🚀 Getting started with Plan F
 
-This is the backend part of [fixmy.plan-f](https://github.com/FixMyBerlin/fixmy.plan-f), built using Strapi.
+This is the backend part of [FixMyBerlin/plan-f.info](https://github.com/FixMyBerlin/plan-f.info), built using Strapi.
 
 ### `develop`
 
