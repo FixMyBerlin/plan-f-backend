@@ -34,15 +34,7 @@
     "shortDescription": {
       "type": "text"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "localChallanges": {
+    "localChallenges": {
       "type": "string"
     },
     "period": {
@@ -54,9 +46,6 @@
     "targetGroup": {
       "type": "string"
     },
-    "funding": {
-      "type": "string"
-    },
     "stakeholders": {
       "type": "richtext"
     },
@@ -65,9 +54,6 @@
       "type": "component",
       "repeatable": true,
       "component": "links.links"
-    },
-    "award": {
-      "type": "richtext"
     },
     "relatedOffice": {
       "type": "richtext"
@@ -89,6 +75,55 @@
       "type": "component",
       "repeatable": false,
       "component": "evaluation.evaluation-group"
+    },
+    "awards": {
+      "displayName": "Award",
+      "type": "component",
+      "repeatable": true,
+      "component": "award.award"
+    },
+    "number": {
+      "type": "integer",
+      "unique": true,
+      "required": true,
+      "min": 1
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.copyright-image"
+    },
+    "centrality": {
+      "type": "string"
+    },
+    "relatedTopic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::topic.topic"
+    },
+    "goals": {
+      "type": "richtext"
+    },
+    "funding": {
+      "type": "richtext"
+    },
+    "authorities": {
+      "type": "richtext"
+    },
+    "particularities": {
+      "type": "richtext"
+    },
+    "results": {
+      "type": "richtext"
+    },
+    "challenges": {
+      "type": "richtext"
+    },
+    "sources": {
+      "type": "richtext"
+    },
+    "personnelExpense": {
+      "type": "richtext"
     }
   }
 }

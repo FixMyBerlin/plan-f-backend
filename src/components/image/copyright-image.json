@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_image_copyright_images",
+  "info": {
+    "displayName": "copyrightImage"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "copyright": {
+      "type": "string"
+    }
+  }
+}

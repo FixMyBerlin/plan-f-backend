@@ -26,16 +26,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1337",
-      "description": "Development server"
+      "url": "http://localhost:1337/api/",
+      "description": "Localhost"
     },
     {
-      "url": "http://plan-f-staging.tiummk647p9vk.eu-central-1.cs.amazonlightsail.com:80/api",
+      "url": "http://plan-f-staging.tiummk647p9vk.eu-central-1.cs.amazonlightsail.com:80/api/",
       "description": "Staging server"
-    },
-    {
-      "url": "YOUR_PRODUCTION_SERVER",
-      "description": "Production server"
     }
   ],
   "externalDocs": {

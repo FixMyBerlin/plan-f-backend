@@ -38,6 +38,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "number": {
+      "type": "integer",
+      "min": 1,
+      "required": true,
+      "unique": true
     }
   }
 }
