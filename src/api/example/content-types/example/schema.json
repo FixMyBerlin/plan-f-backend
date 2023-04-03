@@ -122,7 +122,7 @@
     "sources": {
       "type": "richtext"
     },
-    "personnelExpense": {
+    "personnelExpenses": {
       "type": "richtext"
     }
   }
