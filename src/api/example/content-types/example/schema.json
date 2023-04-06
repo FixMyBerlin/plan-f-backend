@@ -67,12 +67,6 @@
     "spatialStructure": {
       "type": "string"
     },
-    "evaluation": {
-      "displayName": "evaluationGroup",
-      "type": "component",
-      "repeatable": false,
-      "component": "evaluation.evaluation-group"
-    },
     "awards": {
       "displayName": "Award",
       "type": "component",
@@ -81,7 +75,7 @@
     },
     "number": {
       "type": "integer",
-      "unique": true,
+      "unique": false,
       "required": true,
       "min": 1
     },
@@ -124,6 +118,9 @@
     },
     "notes": {
       "type": "richtext"
+    },
+    "subcategory": {
+      "type": "string"
     }
   }
 }

@@ -44,6 +44,11 @@
       "min": 1,
       "required": true,
       "unique": true
+    },
+    "additionalResources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
     }
   }
 }

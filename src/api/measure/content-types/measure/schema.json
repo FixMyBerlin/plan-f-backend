@@ -39,14 +39,19 @@
     },
     "number": {
       "required": true,
-      "unique": true,
+      "unique": false,
       "min": 1,
       "type": "integer"
     },
-    "otherResources": {
+    "additonalResources": {
       "type": "component",
       "repeatable": true,
       "component": "links.links"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.copyright-image"
     }
   }
 }
