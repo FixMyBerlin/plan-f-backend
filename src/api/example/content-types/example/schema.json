@@ -40,9 +40,6 @@
     "period": {
       "type": "string"
     },
-    "state": {
-      "type": "string"
-    },
     "targetGroup": {
       "type": "string"
     },
@@ -123,6 +120,9 @@
       "type": "richtext"
     },
     "personnelExpenses": {
+      "type": "richtext"
+    },
+    "notes": {
       "type": "richtext"
     }
   }
