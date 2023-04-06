@@ -1,0 +1,662 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::example.example",
+  "value": {
+    "uid": "api::example.example",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "Beschreibung",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "measure": {
+        "edit": {
+          "label": "measure",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "measure",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "shortDescription": {
+        "edit": {
+          "label": "Kurzbeschreibung",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "shortDescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "localChallenges": {
+        "edit": {
+          "label": "localChallenges",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "localChallenges",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "period": {
+        "edit": {
+          "label": "Zeitraum",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "period",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "targetGroup": {
+        "edit": {
+          "label": "Zielgruppe",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "targetGroup",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "stakeholders": {
+        "edit": {
+          "label": "Beteiligte Akteur*innen",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "stakeholders",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "links": {
+        "edit": {
+          "label": "Links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "links",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "relatedOffice": {
+        "edit": {
+          "label": "Zuständige Abteilung",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "relatedOffice",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "countryState": {
+        "edit": {
+          "label": "Bundesland",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "countryState",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "population": {
+        "edit": {
+          "label": "Einwohner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "population",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "commune": {
+        "edit": {
+          "label": "Kommune",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "commune",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "spatialStructure": {
+        "edit": {
+          "label": "Raumstruktur",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "spatialStructure",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "awards": {
+        "edit": {
+          "label": "awards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "awards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "number": {
+        "edit": {
+          "label": "number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "number",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "Titelbild",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "centrality": {
+        "edit": {
+          "label": "centrality",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "centrality",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "relatedTopic": {
+        "edit": {
+          "label": "relatedTopic",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "relatedTopic",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "goals": {
+        "edit": {
+          "label": "goals",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "goals",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "funding": {
+        "edit": {
+          "label": "Finanzierung",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "funding",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "authorities": {
+        "edit": {
+          "label": "authorities",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "authorities",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "particularities": {
+        "edit": {
+          "label": "particularities",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "particularities",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "results": {
+        "edit": {
+          "label": "results",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "results",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "challenges": {
+        "edit": {
+          "label": "challenges",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "challenges",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "sources": {
+        "edit": {
+          "label": "sources",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sources",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "personnelExpenses": {
+        "edit": {
+          "label": "personnelExpenses",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "personnelExpenses",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "notes": {
+        "edit": {
+          "label": "notes",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "notes",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "subcategory": {
+        "edit": {
+          "label": "subcategory",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subcategory",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "slug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "shortDescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "period",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "targetGroup",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "population",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "spatialStructure",
+            "size": 6
+          },
+          {
+            "name": "commune",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "countryState",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "links",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "stakeholders",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "relatedOffice",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "awards",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "number",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "centrality",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "goals",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "funding",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "authorities",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "particularities",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "results",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "localChallenges",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "challenges",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "sources",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "personnelExpenses",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "notes",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "measure",
+            "size": 6
+          },
+          {
+            "name": "relatedTopic",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subcategory",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
