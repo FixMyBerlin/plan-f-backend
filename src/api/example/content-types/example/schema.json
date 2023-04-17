@@ -39,9 +39,6 @@
     "period": {
       "type": "string"
     },
-    "targetGroup": {
-      "type": "string"
-    },
     "stakeholders": {
       "type": "richtext"
     },

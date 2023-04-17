@@ -119,20 +119,6 @@
           "sortable": true
         }
       },
-      "targetGroup": {
-        "edit": {
-          "label": "Zielgruppe",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "targetGroup",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "stakeholders": {
         "edit": {
           "label": "Beteiligte Akteur*innen (extern)",
@@ -247,7 +233,7 @@
       },
       "number": {
         "edit": {
-          "label": "number",
+          "label": "Position",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -625,12 +611,6 @@
           {
             "name": "notes",
             "size": 12
-          }
-        ],
-        [
-          {
-            "name": "targetGroup",
-            "size": 6
           }
         ],
         [
