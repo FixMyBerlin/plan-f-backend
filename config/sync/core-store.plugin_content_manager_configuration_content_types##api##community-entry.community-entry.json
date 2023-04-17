@@ -22,7 +22,7 @@
       },
       "title": {
         "edit": {
-          "label": "title",
+          "label": "Titel",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "description": {
         "edit": {
-          "label": "description",
+          "label": "Beschreibung",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "image": {
         "edit": {
-          "label": "image",
+          "label": "Bild",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "website": {
         "edit": {
-          "label": "website",
+          "label": "Website",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -72,8 +72,8 @@
         },
         "list": {
           "label": "website",
-          "searchable": true,
-          "sortable": true
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -106,12 +106,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "image",
-        "website"
-      ],
       "edit": [
         [
           {
@@ -134,9 +128,15 @@
         [
           {
             "name": "website",
-            "size": 6
+            "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "image",
+        "website"
       ]
     }
   },

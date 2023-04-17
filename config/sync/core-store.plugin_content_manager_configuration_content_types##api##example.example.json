@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
+      "mainField": "title",
       "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
@@ -20,16 +20,16 @@
           "sortable": true
         }
       },
-      "name": {
+      "title": {
         "edit": {
-          "label": "Name",
+          "label": "Titel",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "name",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
@@ -64,7 +64,7 @@
       },
       "measure": {
         "edit": {
-          "label": "measure",
+          "label": "Maßnahme",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -93,7 +93,7 @@
       },
       "localChallenges": {
         "edit": {
-          "label": "localChallenges",
+          "label": "Lokale Herausforderungen",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -107,7 +107,7 @@
       },
       "period": {
         "edit": {
-          "label": "Zeitraum",
+          "label": "Dauer: Planung und Umsetzung",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -135,7 +135,7 @@
       },
       "stakeholders": {
         "edit": {
-          "label": "Beteiligte Akteur*innen",
+          "label": "Beteiligte Akteur*innen (extern)",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -163,7 +163,7 @@
       },
       "relatedOffice": {
         "edit": {
-          "label": "Zuständige Abteilung",
+          "label": "Zuständige Abteilung (Ansprechpartner*in)",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -191,7 +191,7 @@
       },
       "population": {
         "edit": {
-          "label": "Einwohner",
+          "label": "Einwohner*innen",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -205,7 +205,7 @@
       },
       "commune": {
         "edit": {
-          "label": "Kommune",
+          "label": "Name der Kommune",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -219,7 +219,7 @@
       },
       "spatialStructure": {
         "edit": {
-          "label": "Raumstruktur",
+          "label": "Raumtypen: Besiedlung",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -233,7 +233,7 @@
       },
       "awards": {
         "edit": {
-          "label": "awards",
+          "label": "Auszeichnung(en)",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -261,7 +261,7 @@
       },
       "image": {
         "edit": {
-          "label": "Titelbild",
+          "label": "Bild",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -275,7 +275,7 @@
       },
       "centrality": {
         "edit": {
-          "label": "centrality",
+          "label": "Raumtypen: Lage",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -289,7 +289,7 @@
       },
       "relatedTopic": {
         "edit": {
-          "label": "relatedTopic",
+          "label": "Verknüpfung zu einem weiteren Handlungsfeld",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -304,7 +304,7 @@
       },
       "goals": {
         "edit": {
-          "label": "goals",
+          "label": "Ziele",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -332,7 +332,7 @@
       },
       "authorities": {
         "edit": {
-          "label": "authorities",
+          "label": "Beteiligte Ämter (intern)",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -346,7 +346,7 @@
       },
       "particularities": {
         "edit": {
-          "label": "particularities",
+          "label": "Besonderheiten",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -360,7 +360,7 @@
       },
       "results": {
         "edit": {
-          "label": "results",
+          "label": "Ergebnisse",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -374,7 +374,7 @@
       },
       "challenges": {
         "edit": {
-          "label": "challenges",
+          "label": "Herausforderungen",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -388,7 +388,7 @@
       },
       "sources": {
         "edit": {
-          "label": "sources",
+          "label": "Quellen",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -402,7 +402,7 @@
       },
       "personnelExpenses": {
         "edit": {
-          "label": "personnelExpenses",
+          "label": "Personeller Aufwand",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -416,7 +416,7 @@
       },
       "notes": {
         "edit": {
-          "label": "notes",
+          "label": "Weitere Anmerkungen",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -430,7 +430,7 @@
       },
       "subcategory": {
         "edit": {
-          "label": "subcategory",
+          "label": "Unterkategorie",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -472,20 +472,56 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "createdAt",
-        "updatedAt",
-        "name"
-      ],
       "edit": [
         [
           {
-            "name": "name",
+            "name": "title",
             "size": 6
           },
           {
-            "name": "slug",
+            "name": "measure",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subcategory",
+            "size": 6
+          },
+          {
+            "name": "relatedTopic",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "commune",
+            "size": 6
+          },
+          {
+            "name": "countryState",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "population",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "spatialStructure",
+            "size": 6
+          },
+          {
+            "name": "centrality",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "localChallenges",
             "size": 6
           }
         ],
@@ -493,6 +529,18 @@
           {
             "name": "shortDescription",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "goals",
+            "size": 12
           }
         ],
         [
@@ -509,41 +557,43 @@
         ],
         [
           {
-            "name": "targetGroup",
-            "size": 6
+            "name": "personnelExpenses",
+            "size": 12
           }
         ],
         [
           {
-            "name": "population",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "spatialStructure",
-            "size": 6
-          },
-          {
-            "name": "commune",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "countryState",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "links",
+            "name": "authorities",
             "size": 12
           }
         ],
         [
           {
             "name": "stakeholders",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "challenges",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "results",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "particularities",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "links",
             "size": 12
           }
         ],
@@ -561,25 +611,7 @@
         ],
         [
           {
-            "name": "number",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "image",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "centrality",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "goals",
+            "name": "sources",
             "size": 12
           }
         ],
@@ -591,68 +623,28 @@
         ],
         [
           {
-            "name": "authorities",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "particularities",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "results",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "localChallenges",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "challenges",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "sources",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "personnelExpenses",
-            "size": 12
-          }
-        ],
-        [
-          {
             "name": "notes",
             "size": 12
           }
         ],
         [
           {
-            "name": "measure",
-            "size": 6
-          },
-          {
-            "name": "relatedTopic",
+            "name": "targetGroup",
             "size": 6
           }
         ],
         [
           {
-            "name": "subcategory",
-            "size": 6
+            "name": "number",
+            "size": 4
           }
         ]
+      ],
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "title"
       ]
     }
   },

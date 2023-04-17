@@ -22,7 +22,7 @@
       },
       "topic": {
         "edit": {
-          "label": "Thema",
+          "label": "Handlungsfeld",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -84,7 +84,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "name"
+          "mainField": "title"
         },
         "list": {
           "label": "examples",
@@ -169,6 +169,10 @@
           {
             "name": "name",
             "size": 6
+          },
+          {
+            "name": "topic",
+            "size": 6
           }
         ],
         [
@@ -184,10 +188,6 @@
           }
         ],
         [
-          {
-            "name": "topic",
-            "size": 6
-          },
           {
             "name": "examples",
             "size": 6

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "community-entry",
     "pluralName": "community-entries",
-    "displayName": "communityEntry"
+    "displayName": "Community Beitrag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,9 @@
       "component": "image.copyright-image"
     },
     "website": {
-      "type": "string"
+      "type": "component",
+      "repeatable": false,
+      "component": "links.links"
     }
   }
 }
