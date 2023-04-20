@@ -20,6 +20,8 @@ jobs:
       DATABASE_USER: ${{ secrets.DATABASE_USER }}
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
       NODE_ENV: production
+      MAILJET_PUBLIC_KEY: ${{ secrets.MAILJET_PUBLIC_KEY }}
+      MAILJET_SECRET_KEY: ${{ secrets.MAILJET_SECRET_KEY }}
 
 
     steps:
