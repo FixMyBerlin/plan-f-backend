@@ -19,6 +19,7 @@ jobs:
       DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
       DATABASE_USER: ${{ secrets.DATABASE_USER }}
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      NODE_ENV: production
 
 
     steps:
