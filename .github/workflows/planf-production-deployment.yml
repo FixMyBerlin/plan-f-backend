@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
+      SERVICE_NAME: ${{ secrets.SERVICE_NAME_PRODUCTION }}
 
     steps:
     - uses: actions/checkout@v3
