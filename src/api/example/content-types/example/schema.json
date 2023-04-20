@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "examples",
+  "info": {
+    "singularName": "example",
+    "pluralName": "examples",
+    "displayName": "Praxisbeispiel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "required": false
+    },
+    "measure": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::measure.measure",
+      "inversedBy": "examples"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "localChallenges": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "stakeholders": {
+      "type": "richtext"
+    },
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
+    },
+    "relatedOffice": {
+      "type": "richtext"
+    },
+    "countryState": {
+      "type": "string"
+    },
+    "population": {
+      "type": "string"
+    },
+    "commune": {
+      "type": "string"
+    },
+    "spatialStructure": {
+      "type": "string"
+    },
+    "awards": {
+      "displayName": "Award",
+      "type": "component",
+      "repeatable": true,
+      "component": "award.award"
+    },
+    "number": {
+      "type": "integer",
+      "unique": false,
+      "required": true,
+      "min": 1
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.copyright-image"
+    },
+    "centrality": {
+      "type": "string"
+    },
+    "relatedTopic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::topic.topic"
+    },
+    "goals": {
+      "type": "richtext"
+    },
+    "funding": {
+      "type": "richtext"
+    },
+    "authorities": {
+      "type": "richtext"
+    },
+    "particularities": {
+      "type": "richtext"
+    },
+    "results": {
+      "type": "richtext"
+    },
+    "challenges": {
+      "type": "richtext"
+    },
+    "sources": {
+      "type": "richtext"
+    },
+    "personnelExpenses": {
+      "type": "richtext"
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "subcategory": {
+      "type": "string"
+    }
+  }
+}

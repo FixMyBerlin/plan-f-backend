@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_entries",
+  "info": {
+    "singularName": "community-entry",
+    "pluralName": "community-entries",
+    "displayName": "Community Beitrag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.copyright-image"
+    },
+    "website": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.links"
+    }
+  }
+}

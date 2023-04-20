@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "measures",
+  "info": {
+    "singularName": "measure",
+    "pluralName": "measures",
+    "displayName": "Maßnahme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "measures"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": false
+    },
+    "examples": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::example.example",
+      "mappedBy": "measure"
+    },
+    "number": {
+      "required": true,
+      "unique": false,
+      "min": 1,
+      "type": "integer"
+    },
+    "additonalResources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image.copyright-image"
+    }
+  }
+}

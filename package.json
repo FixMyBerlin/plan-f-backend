@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.2.3",
-    "@strapi/plugin-i18n": "^4.2.3",
-    "@strapi/plugin-users-permissions": "^4.2.3",
-    "@strapi/strapi": "^4.2.3",
-    "better-sqlite3": "^7.4.6"
+    "@strapi/plugin-i18n": "^4.7.0",
+    "@strapi/plugin-users-permissions": "^4.7.0",
+    "@strapi/strapi": "^4.7.0",
+    "better-sqlite3": "^7.4.6",
+    "pg": "^8.7.3",
+    "strapi-plugin-config-sync": "^1.1.1"
   },
   "author": {
     "name": "FixMyCity"
