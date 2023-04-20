@@ -15,6 +15,8 @@ containers:
       JWT_SECRET: "${JWT_SECRET}"
       PORT: "80"
       NODE_ENV: "${NODE_ENV}"
+      MAILJET_PUBLIC_KEY: "${MAILJET_PUBLIC_KEY}"
+      MAILJET_SECRET_KEY: "${MAILJET_SECRET_KEY}"
     image: public.ecr.aws/n0p8j4k5/plan-f/cms:${GITHUB_SHA}
     ports:
       "80": HTTP
