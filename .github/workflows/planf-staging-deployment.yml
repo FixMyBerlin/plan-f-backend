@@ -15,11 +15,12 @@ jobs:
       APP_KEYS: ${{ secrets.APP_KEYS }}
       API_TOKEN_SALT: ${{ secrets.API_TOKEN_SALT }}
       ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
-      DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
+      DATABASE_HOST: ${{ secrets.DATABASE_HOST_STAGING }}
       DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
-      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD_STAGING }}
       DATABASE_USER: ${{ secrets.DATABASE_USER }}
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      NODE_ENV: production
 
     steps:
     - uses: actions/checkout@v3
