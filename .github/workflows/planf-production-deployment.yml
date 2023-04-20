@@ -11,6 +11,15 @@ jobs:
 
     env:
       SERVICE_NAME: ${{ secrets.SERVICE_NAME_PRODUCTION }}
+      APP_KEYS: ${{ secrets.APP_KEYS_PRODUCTION }}
+      API_TOKEN_SALT: ${{ secrets.API_TOKEN_SALT }}
+      ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
+      DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
+      DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      DATABASE_USER: ${{ secrets.DATABASE_USER }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+
 
     steps:
     - uses: actions/checkout@v3
