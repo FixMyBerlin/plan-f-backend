@@ -13,5 +13,13 @@ module.exports = ({ env }) => ({
           defaultToName: "FixMyCity",
         },
       },
-    }
+    },
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      apolloServer: {
+        introspection: true,
+      },
+    },
+  },
 });
