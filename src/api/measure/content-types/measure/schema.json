@@ -52,6 +52,11 @@
       "type": "component",
       "repeatable": true,
       "component": "links.links"
+    },
+    "fundings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
     }
   }
 }
