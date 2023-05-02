@@ -22,7 +22,8 @@
     },
     "slug": {
       "type": "uid",
-      "required": false
+      "required": false,
+      "targetField": "title"
     },
     "measure": {
       "type": "relation",
@@ -32,9 +33,6 @@
     },
     "shortDescription": {
       "type": "text"
-    },
-    "localChallenges": {
-      "type": "string"
     },
     "period": {
       "type": "string"
@@ -117,6 +115,12 @@
     },
     "subcategory": {
       "type": "string"
+    },
+    "localChallenges": {
+      "type": "richtext"
+    },
+    "communication": {
+      "type": "richtext"
     }
   }
 }

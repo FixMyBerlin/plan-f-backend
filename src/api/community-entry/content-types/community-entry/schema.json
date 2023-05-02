@@ -25,7 +25,7 @@
     },
     "website": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "links.links"
     }
   }
