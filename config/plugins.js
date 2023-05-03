@@ -29,11 +29,11 @@ module.exports = ({ env }) => ({
         s3Options: {
           accessKeyId: env("S3_PUBLIC_KEY"),
           secretAccessKey: env("S3_PRIVATE_KEY"),
-          region: "eu-central-1",
+          region: env("S3_REGION"),
           params: {
             ACL: 'private',
             signedUrlExpires: 60 * 60 * 24 * 7,
-            Bucket: "plan-f",
+            Bucket: env("S3_BUCKET_NAME"),
           },
         },
       },
