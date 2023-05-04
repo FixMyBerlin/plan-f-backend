@@ -27,8 +27,8 @@ module.exports = ({ env }) => ({
       provider: "aws-s3",
       providerOptions: {
         s3Options: {
-          accessKeyId: env("S3_PUBLIC_KEY"),
-          secretAccessKey: env("S3_PRIVATE_KEY"),
+          accessKeyId: env("S3_ACCESS_KEY_ID"),
+          secretAccessKey: env("S3_SECRET_ACCESS_KEY"),
           region: env("S3_REGION"),
           params: {
             ACL: 'public-read',
