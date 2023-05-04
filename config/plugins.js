@@ -31,8 +31,8 @@ module.exports = ({ env }) => ({
           secretAccessKey: env("S3_PRIVATE_KEY"),
           region: env("S3_REGION"),
           params: {
-            ACL: 'private',
-            signedUrlExpires: 60 * 60 * 24 * 7,
+            ACL: 'public-read',
+            signedUrlExpires: 60 * 60 * 24,
             Bucket: env("S3_BUCKET_NAME"),
           },
         },
