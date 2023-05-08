@@ -49,6 +49,11 @@
       "type": "component",
       "repeatable": true,
       "component": "links.links"
+    },
+    "guidelines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
     }
   }
 }
