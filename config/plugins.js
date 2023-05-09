@@ -44,4 +44,74 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  "fuzzy-search": {
+    enabled: true,
+    config: {
+      contentTypes: [
+        {
+          uid: "api::example.example",
+          modelName: "example",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            characterLimit: 500,
+            threshold: -600,
+            limit: 3,
+            keys: [
+              {
+                name: "title",
+                weight: 100,
+              },
+              {
+                name: "description",
+                weight: 10,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::topic.topic",
+          modelName: "topic",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            keys: [
+              {
+                name: "name",
+                weight: 200,
+              },
+              {
+                name: "description",
+                weight: 10,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::measure.measure",
+          modelName: "measure",
+          fuzzysortOptions: {
+            characterLimit: 500,
+            keys: [
+              {
+                name: "name",
+                weight: 200,
+              },
+              {
+                name: "description",
+                weight: 10,
+              },
+            ],
+          },
+        },
+      ],
+    },
+  },
 });
