@@ -37,11 +37,6 @@ module.exports = ({ env }) => ({
           },
         },
       },
-      actionOptions: {
-        upload: {},
-        uploadStream: {},
-        delete: {},
-      },
     },
   },
   "fuzzy-search": {
@@ -62,34 +57,62 @@ module.exports = ({ env }) => ({
             },
           },
           fuzzysortOptions: {
-            characterLimit: 500,
-            threshold: -600,
-            limit: 3,
+            characterLimit: 1000,
+            threshold: -500,
+            limit: 10,
             keys: [
               {
                 name: "title",
                 weight: 100,
               },
               {
-                name: "description",
-                weight: 10,
+                name: "subcategory",
+                weight: 0,
               },
+              {
+                name: "goals",
+                weight: 0,
+              },
+              {
+                name: "particularities",
+                weight: 0,
+              },
+              {
+                name: "awards",
+                weight: 0,
+              },
+              {
+                name: "localChallenges",
+                weight: 0,
+              }
             ],
           },
         },
         {
           uid: "api::topic.topic",
           modelName: "topic",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
           fuzzysortOptions: {
-            characterLimit: 500,
+            characterLimit: 1000,
+            threshold: -500,
+            limit: 10,
             keys: [
               {
                 name: "name",
-                weight: 200,
+                weight: 100,
               },
               {
                 name: "description",
-                weight: 10,
+                weight: 0,
               },
             ],
           },
@@ -97,16 +120,28 @@ module.exports = ({ env }) => ({
         {
           uid: "api::measure.measure",
           modelName: "measure",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
           fuzzysortOptions: {
-            characterLimit: 500,
+            characterLimit: 1000,
+            limit: 10,
+            threshold: -500,
             keys: [
               {
                 name: "name",
-                weight: 200,
+                weight: 100,
               },
               {
                 name: "description",
-                weight: 10,
+                weight: 0,
               },
             ],
           },
