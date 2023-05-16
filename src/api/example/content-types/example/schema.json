@@ -58,10 +58,6 @@
       "type": "string",
       "required": true
     },
-    "population": {
-      "type": "string",
-      "required": true
-    },
     "commune": {
       "type": "string",
       "required": true
@@ -140,6 +136,26 @@
     },
     "communication": {
       "type": "richtext",
+      "required": true
+    },
+    "population": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "costs": {
+      "type": "biginteger",
+      "min": "0",
+      "required": true
+    },
+    "financiallyWeak": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "beginnerFriendly": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }
