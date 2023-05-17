@@ -152,6 +152,11 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "population": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
     }
   }
 }
