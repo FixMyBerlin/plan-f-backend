@@ -58,6 +58,12 @@
       "type": "component",
       "repeatable": true,
       "component": "links.links"
+    },
+    "communityEntries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::community-entry.community-entry",
+      "mappedBy": "massnahme"
     }
   }
 }
