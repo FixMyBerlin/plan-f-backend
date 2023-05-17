@@ -37,11 +37,116 @@ module.exports = ({ env }) => ({
           },
         },
       },
-      actionOptions: {
-        upload: {},
-        uploadStream: {},
-        delete: {},
-      },
+    },
+  },
+  "fuzzy-search": {
+    enabled: true,
+    config: {
+      contentTypes: [
+        {
+          uid: "api::example.example",
+          modelName: "example",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            characterLimit: 1000,
+            threshold: -500,
+            limit: 6,
+            keys: [
+              {
+                name: "title",
+                weight: 100,
+              },
+              {
+                name: "subcategory",
+                weight: 0,
+              },
+              {
+                name: "goals",
+                weight: 0,
+              },
+              {
+                name: "particularities",
+                weight: 0,
+              },
+              {
+                name: "awards",
+                weight: 0,
+              },
+              {
+                name: "localChallenges",
+                weight: 0,
+              }
+            ],
+          },
+        },
+        {
+          uid: "api::topic.topic",
+          modelName: "topic",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            characterLimit: 1000,
+            threshold: -500,
+            limit: 4,
+            keys: [
+              {
+                name: "name",
+                weight: 100,
+              },
+              {
+                name: "description",
+                weight: 0,
+              },
+            ],
+          },
+        },
+        {
+          uid: "api::measure.measure",
+          modelName: "measure",
+          transliterate: false,
+          queryConstraints: {
+            where: {
+              $and: [
+                {
+                  publishedAt: { $notNull: true },
+                },
+              ],
+            },
+          },
+          fuzzysortOptions: {
+            characterLimit: 1000,
+            limit: 2,
+            threshold: -500,
+            keys: [
+              {
+                name: "name",
+                weight: 100,
+              },
+              {
+                name: "description",
+                weight: 0,
+              },
+            ],
+          },
+        },
+      ],
     },
   },
 });

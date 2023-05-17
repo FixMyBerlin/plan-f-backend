@@ -18,7 +18,8 @@
       "unique": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "slug": {
       "type": "uid",
@@ -32,10 +33,12 @@
       "inversedBy": "examples"
     },
     "shortDescription": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "period": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "stakeholders": {
       "type": "richtext"
@@ -44,22 +47,24 @@
       "displayName": "links",
       "type": "component",
       "repeatable": true,
-      "component": "links.links"
+      "component": "links.links",
+      "required": true
     },
     "relatedOffice": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": false
     },
     "countryState": {
-      "type": "string"
-    },
-    "population": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "commune": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "spatialStructure": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "awards": {
       "displayName": "Award",
@@ -76,10 +81,12 @@
     "image": {
       "type": "component",
       "repeatable": false,
-      "component": "image.copyright-image"
+      "component": "image.copyright-image",
+      "required": true
     },
     "centrality": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "relatedTopic": {
       "type": "relation",
@@ -87,28 +94,36 @@
       "target": "api::topic.topic"
     },
     "goals": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "funding": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "authorities": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "particularities": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "results": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "challenges": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "sources": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "personnelExpenses": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "notes": {
       "type": "richtext"
@@ -120,7 +135,28 @@
       "type": "richtext"
     },
     "communication": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "costs": {
+      "type": "biginteger",
+      "min": "0",
+      "required": true
+    },
+    "financiallyWeak": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "beginnerFriendly": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "population": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
     }
   }
 }

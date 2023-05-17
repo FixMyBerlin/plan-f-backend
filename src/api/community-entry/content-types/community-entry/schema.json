@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 300
     },
     "image": {
       "type": "component",
@@ -25,8 +27,33 @@
     },
     "website": {
       "type": "component",
-      "repeatable": true,
-      "component": "links.links"
+      "repeatable": false,
+      "component": "links.links",
+      "required": true
+    },
+    "massnahme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::measure.measure",
+      "inversedBy": "communityEntries"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string",
+      "required": false
+    },
+    "countryState": {
+      "type": "string",
+      "required": true
+    },
+    "commune": {
+      "type": "string",
+      "required": true
     }
   }
 }
