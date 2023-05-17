@@ -138,11 +138,6 @@
       "type": "richtext",
       "required": true
     },
-    "population": {
-      "type": "biginteger",
-      "required": true,
-      "min": "1"
-    },
     "costs": {
       "type": "biginteger",
       "min": "0",
