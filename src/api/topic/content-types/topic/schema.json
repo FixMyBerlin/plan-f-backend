@@ -40,7 +40,7 @@
         "images"
       ]
     },
-    "number": {
+    "position": {
       "type": "integer",
       "min": 1,
       "required": true,

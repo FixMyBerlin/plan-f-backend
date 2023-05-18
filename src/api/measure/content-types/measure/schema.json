@@ -38,7 +38,7 @@
       "target": "api::example.example",
       "mappedBy": "measure"
     },
-    "number": {
+    "position": {
       "required": true,
       "unique": false,
       "min": 1,

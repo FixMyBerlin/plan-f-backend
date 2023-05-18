@@ -72,7 +72,7 @@
       "repeatable": true,
       "component": "award.award"
     },
-    "number": {
+    "position": {
       "type": "integer",
       "unique": false,
       "required": true,
