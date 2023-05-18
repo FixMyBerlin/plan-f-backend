@@ -14,7 +14,8 @@
       "required": true
     },
     "copyright": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
