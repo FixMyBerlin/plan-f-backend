@@ -64,6 +64,10 @@
       "relation": "oneToMany",
       "target": "api::community-entry.community-entry",
       "mappedBy": "massnahme"
+    },
+    "shortDescription": {
+      "type": "text",
+      "maxLength": 250
     }
   }
 }

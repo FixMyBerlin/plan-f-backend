@@ -34,7 +34,8 @@
     },
     "shortDescription": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 200
     },
     "period": {
       "type": "string",
