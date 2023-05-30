@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:18-alpine
 # Installing libvips-dev for sharp Compatability
 RUN apk upgrade && apk add vips
 ARG NODE_ENV=development
