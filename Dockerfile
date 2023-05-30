@@ -6,7 +6,7 @@ ENV NODE_ENV=${NODE_ENV}
 WORKDIR /opt/planf
 COPY ./package.json ./yarn.lock ./
 ENV PATH /opt/planf/node_modules/.bin:$PATH
-RUN yarn config set network-timeout 600000 -g && yarn install
+RUN yarn config set network-timeout 600000 -g && yarn install --ignore-engines
 WORKDIR /opt/planf/app
 COPY ./ .
 RUN yarn build
