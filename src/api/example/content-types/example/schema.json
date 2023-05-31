@@ -21,6 +21,11 @@
       "type": "richtext",
       "required": true
     },
+    "slug": {
+      "type": "uid",
+      "required": false,
+      "targetField": "title"
+    },
     "measure": {
       "type": "relation",
       "relation": "manyToOne",
@@ -153,12 +158,6 @@
       "type": "biginteger",
       "required": true,
       "min": "1"
-    },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true,
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     }
   }
 }
