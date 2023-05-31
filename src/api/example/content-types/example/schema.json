@@ -133,7 +133,8 @@
       "type": "string"
     },
     "localChallenges": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "communication": {
       "type": "richtext",
@@ -141,8 +142,7 @@
     },
     "costs": {
       "type": "biginteger",
-      "min": "0",
-      "required": false
+      "min": "0"
     },
     "financiallyWeak": {
       "type": "boolean",
