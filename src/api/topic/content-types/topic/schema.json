@@ -59,6 +59,11 @@
     "shortDescription": {
       "type": "text",
       "maxLength": 250
+    },
+    "fundings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
     }
   }
 }
