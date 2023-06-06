@@ -1,6 +1,6 @@
 FROM node:18-alpine
 # Installing libvips-dev for sharp Compatability
-RUN apk upgrade && apk add vips
+RUN apk upgrade && apk add vips && apk add bash
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 WORKDIR /opt/planf
