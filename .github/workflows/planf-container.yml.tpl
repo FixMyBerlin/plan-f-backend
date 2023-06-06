@@ -1,6 +1,6 @@
 serviceName: ${SERVICE_NAME}
 containers:
-  strapi:
+  app:
     command: []
     environment:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
@@ -26,7 +26,7 @@ containers:
     ports:
       "80": HTTP
 publicEndpoint:
-  containerName: strapi
+  containerName: app
   containerPort: 80
   healthCheck:
     path: /_health
