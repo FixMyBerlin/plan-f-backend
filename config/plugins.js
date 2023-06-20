@@ -58,7 +58,7 @@ module.exports = ({ env }) => ({
           },
           fuzzysortOptions: {
             characterLimit: 300,
-            threshold: -3000,
+            threshold: -5000,
             limit: 6,
             keys: [
               {
@@ -103,7 +103,7 @@ module.exports = ({ env }) => ({
           },
           fuzzysortOptions: {
             characterLimit: 300,
-            threshold: -3000,
+            threshold: -5000,
             limit: 4,
             keys: [
               {
@@ -133,7 +133,7 @@ module.exports = ({ env }) => ({
           fuzzysortOptions: {
             characterLimit: 300,
             limit: 2,
-            threshold: -3000,
+            threshold: -5000,
             keys: [
               {
                 name: "name",
