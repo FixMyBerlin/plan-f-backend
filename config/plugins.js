@@ -84,6 +84,10 @@ module.exports = ({ env }) => ({
               {
                 name: "localChallenges",
                 weight: 0,
+              },
+              {
+                name: "commune",
+                weight: 10,
               }
             ],
           },
